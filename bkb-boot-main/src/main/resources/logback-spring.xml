@@ -18,7 +18,7 @@
                     defaultValue="30"/>
     <contextName>${application.name}</contextName>
 
-    <springProfile name="dev,prod">
+    <springProfile name="local,dev,prod">
         <!--输出到控制台-->
         <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
             <encoder>
@@ -30,7 +30,7 @@
         </root>
     </springProfile>
 
-    <springProfile name="dev,test,prod">
+    <springProfile name="dev,prod">
         <!--输出到文件-->
         <appender name="file-info" class="ch.qos.logback.core.rolling.RollingFileAppender">
             <file>${logging.path}/info/${application.name}-info.log</file>
