@@ -9,11 +9,6 @@ spring:
     url: jdbc:mysql://localhost:3306/db_bkb?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT&nullCatalogMeansCurrent=true
     username: root
     password: root
-  redis:
-    host: localhost
-    port: 6379
-    password:
-jiuza
 # 微信
 wx:
   app-id: xxxxxxxxxxx
